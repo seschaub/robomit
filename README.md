@@ -10,7 +10,6 @@ In nonexperimental work, omitted variables bias can cause flawed research conclu
 ```
 # from CRAN
 install.packages("robomit")
-
 ```
 
 ## References
