@@ -4,9 +4,9 @@
 \alias{o_beta_boot_viz}
 \title{Visualization of bootstrapped beta*s}
 \usage{
-o_beta_boot_viz(y, x, con, m = "none", id = "none", time = "none", delta = 1, R2max,
-sim, obs, rep, CI, type, norm = TRUE, bin, col = c("#08306b","#4292c6","#c6dbef"),
-nL = TRUE, mL = TRUE, useed = NA, data)
+o_beta_boot_viz(y, x, con, m = "none", w = NULL, id = "none", time = "none",
+delta = 1, R2max, sim, obs, rep, CI, type, norm = TRUE, bin,
+col = c("#08306b","#4292c6","#c6dbef"), nL = TRUE, mL = TRUE, useed = NA, data)
 }
 \arguments{
 \item{y}{Name of the dependent variable (as string).}
@@ -16,6 +16,8 @@ nL = TRUE, mL = TRUE, useed = NA, data)
 \item{con}{Name of related control variables. Provided as string in the format: "w + z +...".}
 
 \item{m}{Name of unrelated control variables (m; see Oster 2019; as string; default is m = "none").}
+
+\item{w}{weights (only for weighted estimations). Warning: For weighted panel models R can report different R-square than Stata, leading deviation between R and Stata results.}
 
 \item{id}{Name of the individual id variable (e.g. firm or farm; as string). Only applicable for fixed effect panel models.}
 
